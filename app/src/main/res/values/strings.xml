@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Business Card</string>
+    <!-- TODO: Remove or change this placeholder text -->
+
+    <string name="company_name">Code.Fun</string>
+    <string name="job_title">Android Developer</string>
+    <string name="owner_name">Name</string>
+    <string name="phoneNumber">Number</string>
+    <string name="mailAddress">email Address</string>
+    <string name="websiteUrl">Web Site Url</string>
+    <string name="address">Address</string>
+
+    <string name="contentDescription">contentDescription</string>
+    <string name="cards">Cards</string>
+    <string name="my_card">My Card</string>
+</resources>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/allCardsFragment">
+
+    <fragment
+        android:id="@+id/allCardsFragment"
+        android:name="com.example.businesscard.ui.fragment.AllCardsFragment"
+        android:label="Cards"
+        tools:layout="@layout/fragment_all_cards">
+        <action
+            android:id="@+id/action_allCardsFragment_to_scanCardQrFragment"
+            app:destination="@id/scanCardQrFragment" />
+        <action
+            android:id="@+id/action_allCardsFragment_to_qrCodeFragment"
+            app:destination="@id/qrCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myCardsFragment"
+        android:name="com.example.businesscard.ui.fragment.MyCardsFragment"
+        android:label="My Card"
+        tools:layout="@layout/fragment_my_cards">
+        <action
+            android:id="@+id/action_myCardsFragment_to_selectDesignFragment"
+            app:destination="@id/selectDesignFragment" />
+        <action
+            android:id="@+id/action_myCardsFragment_to_qrCodeFragment"
+            app:destination="@id/qrCodeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectDesignFragment"
+        android:name="com.example.businesscard.ui.fragment.SelectDesignFragment"
+        android:label="Select Design"
+        tools:layout="@layout/fragment_select_design">
+        <action
+            android:id="@+id/action_selectDesignFragment_to_formDataCollectionFragment"
+            app:destination="@id/formDataCollectionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/formDataCollectionFragment"
+        android:name="com.example.businesscard.ui.fragment.FormDataCollectionFragment"
+        android:label="Details"
+        tools:layout="@layout/fragment_form_data_collection">
+        <argument
+            android:name="cardDesignCode"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_formDataCollectionFragment_to_myCardsFragment"
+            app:destination="@id/myCardsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/qrCodeFragment"
+        android:name="com.example.businesscard.ui.fragment.QrCodeFragment"
+        android:label="Qr Code"
+        tools:layout="@layout/fragment_qr_code">
+        <argument
+            android:name="SendQrCodeData"
+            app:argType="com.example.businesscard.db.BusinessCard" />
+    </fragment>
+    <fragment
+        android:id="@+id/scanCardQrFragment"
+        android:name="com.example.businesscard.ui.fragment.ScanCardQrFragment"
+        android:label="Scan now"
+        tools:layout="@layout/fragment_scan_card_qr">
+        <action
+            android:id="@+id/action_scanCardQrFragment_to_allCardsFragment"
+            app:destination="@id/allCardsFragment" />
+    </fragment>
+</navigation>

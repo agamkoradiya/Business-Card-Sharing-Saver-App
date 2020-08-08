@@ -1,0 +1,781 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardDesign1"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/gradient_white"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:orientation="vertical"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:id="@+id/companyName1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="50"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:gravity="bottom|center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/company_name"
+                            android:textColor="#2b3c4e"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/jobTitle1"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="50"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:gravity="top|center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/job_title"
+                            android:textColor="#2b3c4e" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:orientation="vertical"
+                        android:weightSum="100">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20"
+                            android:background="#2d3d4c"
+                            android:orientation="horizontal"
+                            android:weightSum="50">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="10"
+                                android:contentDescription="@string/contentDescription"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:src="@drawable/ic_baseline_person_24" />
+
+                            <TextView
+                                android:id="@+id/ownerName1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="40"
+                                android:ellipsize="marquee"
+                                android:fadingEdge="horizontal"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="start|center"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:text="@string/owner_name"
+                                android:textColor="#fff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20"
+                            android:background="#399588"
+                            android:orientation="horizontal"
+                            android:weightSum="50">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="10"
+                                android:contentDescription="@string/contentDescription"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:src="@drawable/ic_baseline_call_24" />
+
+                            <TextView
+                                android:id="@+id/phoneNumber1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="40"
+                                android:ellipsize="marquee"
+                                android:fadingEdge="horizontal"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="start|center"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:text="@string/phoneNumber"
+                                android:textColor="#fff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20"
+                            android:background="#cdab3f"
+                            android:orientation="horizontal"
+                            android:weightSum="50">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="10"
+                                android:contentDescription="@string/contentDescription"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:src="@drawable/ic_baseline_mail_24" />
+
+                            <TextView
+                                android:id="@+id/mailAddress1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="40"
+                                android:ellipsize="marquee"
+                                android:fadingEdge="horizontal"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="start|center"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:text="@string/mailAddress"
+                                android:textColor="#fff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20"
+                            android:background="#c56636"
+                            android:orientation="horizontal"
+                            android:weightSum="50">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="10"
+                                android:contentDescription="@string/contentDescription"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:src="@drawable/ic_baseline_public_24" />
+
+                            <TextView
+                                android:id="@+id/websiteUrl1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="40"
+                                android:ellipsize="marquee"
+                                android:fadingEdge="horizontal"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="start|center"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:text="@string/websiteUrl"
+                                android:textColor="#fff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20"
+                            android:background="#c13a3e"
+                            android:orientation="horizontal"
+                            android:weightSum="50">
+
+                            <ImageView
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="10"
+                                android:contentDescription="@string/contentDescription"
+                                android:gravity="center"
+                                android:padding="8dp"
+                                android:src="@drawable/ic_baseline_location_on_24" />
+
+                            <TextView
+                                android:id="@+id/address1"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="40"
+                                android:ellipsize="marquee"
+                                android:fadingEdge="horizontal"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="start|center"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:text="@string/address"
+                                android:textColor="#fff" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardDesign2"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/blue_triangle"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:orientation="vertical"
+                        android:padding="20dp"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:id="@+id/ownerName2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="start|center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/owner_name"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:id="@+id/phoneNumber2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="start|center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/phoneNumber"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:id="@+id/mailAddress2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="start|center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/mailAddress"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:id="@+id/websiteUrl2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="start|center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/websiteUrl"
+                            android:textColor="#fff" />
+
+                        <TextView
+                            android:id="@+id/address2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="start|center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/address"
+                            android:textColor="#fff" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="50"
+                        android:orientation="vertical"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:id="@+id/companyName2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="50"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:gravity="bottom|center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/company_name"
+                            android:textColor="#fff"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/jobTitle2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="50"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:gravity="top|center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/job_title"
+                            android:textColor="#fff" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardDesign3"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                android:visibility="gone"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/cup_book"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="60"
+                        android:baselineAligned="false"
+                        android:orientation="vertical"
+                        android:paddingStart="20dp"
+                        android:paddingTop="10dp"
+                        android:paddingEnd="5dp"
+                        android:paddingBottom="10dp"
+                        android:weightSum="150"
+                        tools:ignore="RtlSymmetry">
+
+                        <TextView
+                            android:id="@+id/companyName3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="30"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:gravity="bottom|start"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/company_name"
+                            android:textColor="#000"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/jobTitle3"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="30"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:gravity="top|start"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/job_title"
+                            android:textColor="#000" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="18"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/contentDescription"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:src="@drawable/ic_baseline_person_24"
+                                android:tint="#000" />
+
+                            <TextView
+                                android:id="@+id/ownerName3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="3dp"
+                                android:ellipsize="marquee"
+                                android:fadingEdge="horizontal"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="start|center"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:text="@string/owner_name"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="18"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/contentDescription"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:src="@drawable/ic_baseline_call_24"
+                                android:tint="#000" />
+
+                            <TextView
+                                android:id="@+id/phoneNumber3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="3dp"
+                                android:ellipsize="marquee"
+                                android:fadingEdge="horizontal"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="start|center"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:text="@string/phoneNumber"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="18"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/contentDescription"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:src="@drawable/ic_baseline_mail_24"
+                                android:tint="#000" />
+
+                            <TextView
+                                android:id="@+id/mailAddress3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="3dp"
+                                android:ellipsize="marquee"
+                                android:fadingEdge="horizontal"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="start|center"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:text="@string/mailAddress"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="18"
+                            android:orientation="horizontal"
+                            tools:ignore="UseCompoundDrawables">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/contentDescription"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:src="@drawable/ic_baseline_public_24"
+                                android:tint="#000" />
+
+                            <TextView
+                                android:id="@+id/websiteUrl3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="3dp"
+                                android:ellipsize="marquee"
+                                android:fadingEdge="horizontal"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="start|center"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:text="@string/websiteUrl"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="18"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:contentDescription="@string/contentDescription"
+                                android:gravity="center"
+                                android:padding="1dp"
+                                android:src="@drawable/ic_baseline_location_on_24"
+                                android:tint="#000" />
+
+                            <TextView
+                                android:id="@+id/address3"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="3dp"
+                                android:ellipsize="marquee"
+                                android:fadingEdge="horizontal"
+                                android:fontFamily="sans-serif-light"
+                                android:gravity="start|center"
+                                android:marqueeRepeatLimit="marquee_forever"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:text="@string/address"
+                                android:textColor="#000"
+                                android:textSize="13sp" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardDesign4"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_margin="10dp"
+                android:elevation="2dp"
+                android:visibility="gone"
+                app:cardCornerRadius="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buildings"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="40"
+                        android:orientation="vertical"
+                        android:weightSum="100">
+
+                        <TextView
+                            android:id="@+id/companyName4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="50"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:gravity="bottom|center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/company_name"
+                            android:textColor="#000"
+                            android:textSize="28sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/jobTitle4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="50"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:gravity="top|center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/job_title"
+                            android:textColor="#000" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="130dp"
+                        android:layout_weight="60"
+                        android:orientation="vertical"
+                        android:padding="5dp"
+                        android:paddingStart="10dp"
+                        android:weightSum="100"
+                        tools:ignore="RtlSymmetry">
+
+                        <TextView
+                            android:id="@+id/ownerName4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/owner_name"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/phoneNumber4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/phoneNumber"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/mailAddress4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/mailAddress"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/websiteUrl4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/websiteUrl"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                        <TextView
+                            android:id="@+id/address4"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="20"
+                            android:ellipsize="marquee"
+                            android:fadingEdge="horizontal"
+                            android:fontFamily="sans-serif-light"
+                            android:gravity="center"
+                            android:marqueeRepeatLimit="marquee_forever"
+                            android:scrollHorizontally="true"
+                            android:singleLine="true"
+                            android:text="@string/address"
+                            android:textColor="#000"
+                            android:textSize="13sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
